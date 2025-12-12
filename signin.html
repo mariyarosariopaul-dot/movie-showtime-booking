@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+         .login-container{
+             background-image:url(img/night-sky-moon-bdlgkile5f7jt8bl.jpg);
+            background-position: center;
+            background-repeat:no-repeat ;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;  
+        }
+        .login-container{
+         background-color: pink;
+         padding: 200px;
+         /* width: 350px; */
+         border-radius: 10px;
+        }
+        .login-container .login .input-group label{
+            margin-bottom: 5px;
+            font-size: 16px;
+            font-weight: 600;
+        }
+        .login-container .login .input-group input{
+            padding: 10px;
+            font-size: 16px;
+            bottom: 1px solid green;
+            border-radius: 5px;
+        }
+        .login-container .login.input-group:focus{
+            outline: none;
+            border: 1px solid darkgreen;
+        }
+        .login-container .login button{
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            background-color: green;
+            border: none;
+            border-radius: 5px;
+            color: bisque;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+         <div class="login">
+            <form>
+                <h2>Get Started</h2>
+                <div class="input-group">
+                    <input type="text"  placeholder=" enter continue with google">
+                    <input type="text"  placeholder=" enter continue with email">
+                    <input type="text"  placeholder="enter continue with apple">
+                    <h3>OR</h3>
+                    <input type="text" id="continue with mobile number" placeholder="enter continue with mobile number">
+                </div>
+                <button type="submit">login</button>
+            </form>
+         </div>
+    </div>
+</body>
+</html>

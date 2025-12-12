@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .login-container{
+            background-image:url(img/night-sky-moon-bdlgkile5f7jt8bl.jpg);
+            background-position: center;
+            background-repeat:no-repeat ;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center; 
+            /* text-align: center; */
+            align-items: center;
+        }
+        .input-group{
+            padding: 10px;
+            border-radius: 30px; 
+            box-shadow: 0 10px solid rgb(136, 4, 114);
+            width: 400px;
+            /* text-align: center; */
+        }
+        .login h1{
+            text-align: center;
+            margin-bottom: 30px;
+            color: blue;
+        }
+         .input-group h2{
+            text-align: center;
+            margin-bottom: 30px;
+            /* color: blue; */
+        }
+        .input-group input{
+            width: 100%;
+            padding: 10px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            border: 1px solid black;
+            /* text-align: center; */
+        }
+        .input-group input:focus{
+            outline: none;
+            border: 1px solid khaki ;
+        }
+        .login-container button{
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            background-color: blueviolet;
+            border: none;
+            border-radius: 5px;
+            color: aquamarine;
+            cursor: pointer;
+           
+        }
+        .register button:hover{
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+      <div class="login">
+         <form>
+          <h1>Get Started</h1>
+          <div class="input-group">
+            <input type="text" placeholder="enter Continue with google">
+          </div>
+          <div class="input-group">
+            <input type="text" placeholder="enter Continue with Email">
+          </div>
+
+          <div class="input-group">
+            <input type="text" placeholder="enter Continue with Apple">
+          </div>
+
+          <div class="input-group">
+            <h2>OR</h2>
+            <input type=" text" placeholder="enter Continue With mobile Number">
+          </div>
+          <button type="submit">login</button>
+        </form>
+      </div>
+    </div>
+</body>
+</html

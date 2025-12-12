@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       *  {
+            margin:0;
+            padding:0;
+            box-sizing: border-box;                                                                                                                                        
+        }
+        .bookmyshow {
+            background-color: white;
+            /* padding: 50px; */
+            /* margin-right:50px; */
+        }
+        .book{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+        .myshow img{
+            width: 150px;
+            height: 40px;
+            margin-right: 10px;
+            margin-top: 7px;
+        }
+        .show{
+             margin-right: 150px ; 
+             margin-top: 10px; 
+        }
+        .show input{
+            display: flex;
+             font-size: 16px; 
+             width: 500px; 
+             margin-right: 10px; 
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 20px;
+             border: 3px solid black; 
+        }
+        .input:focus{
+            box-shadow: 0 0 10px gray;
+            border: none;
+        }
+        .box ul{
+            list-style-type: none;
+            display: flex;
+            justify-content: end;
+        }
+        .box ul li{
+              padding: 30px;  
+             /* font-size: 14px;  */
+        }
+        .box button{
+            background-color:red ;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            height: 30px;
+            width: 50px;
+            margin-top:  24px;
+            
+        }
+        .box button :hover{
+           background-color: white;
+        }
+        .myshow{
+            display: flex;
+            justify-content: space-around;
+            padding: 4px;
+        }
+        .movie{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 20px;
+           
+        }
+         .movie ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content:start; 
+              gap: 30px; 
+        }
+        .movie ul li a {
+           text-decoration: none;
+            color: black;
+            /* font-size: 18px; */
+             margin-right: 10px;
+        }
+        .movie ul li a:hover{
+            color: rgb(241, 53, 5);
+        }
+        .time img{
+            width: 1350px;
+           height: 200px;
+           /* margin: 30px; */
+        }
+        .time2{
+            margin: 20px;
+        }
+        .time2 h1{
+            background-color: gray;
+            color: #fff;
+        }
+        .box1 img{
+            width: 200px;
+         height: 200px;
+         border-radius: 10px;
+         margin: 20px;
+         transition: tranform 0.5s;
+        
+        }
+        .box1 img:hover{
+            transform: scale(1.1);
+        }
+        .box1{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+        }
+         .box2 img{
+            width: 1350px;
+           height: 200px;
+           padding: 20px;
+           border-radius: 10px;
+        }
+        .box3 img{
+            width: 200px;
+         height: 200px;
+         border-radius: 10px;
+         margin: 20px;
+          transition: tranform 0.5s;
+        }
+       .box3 img:hover{
+            transform: scale(1.1);
+        }
+        .box3{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+         
+         .box6 img{
+            width: 200px;
+         height: 200px;
+         border-radius: 20px;
+         margin: 20px;
+        }
+        .box6{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+             color: white;
+             text-align: center;
+             transition: tranform 0.5s;
+        }
+         .box6 img:hover{
+            transform: scale(1.1);
+        }
+        .box4{
+            background-color:navy;
+        }
+        .header{
+            color: white;
+        }
+        .time3{
+            margin: 20px;
+        }
+        .run{
+            background-color: bisque;
+        }
+        .box1 h4,
+        .box1 h5,
+        .box1 h3{
+            text-align: center;
+            color: black;
+            font-size: 20px;
+        }
+        .index{
+            color: white;
+            background-color: black;
+            margin: 10px;
+        }
+       .footer{
+           background-color: #333543;
+           color: white;
+           padding: 30px 5%;
+           margin-top: 40px;
+       }
+       .footer-content {
+         display: flex;
+         justify-content: space-between;
+         flex-wrap: wrap;
+         gap: 30px;
+       }
+       .footer-column h3 {
+          margin-bottom: 15px;
+          color: #f84464;
+       }
+       .footer-links {
+        list-style: none;
+       }
+       .footer-links li {
+                 margin-bottom: 8px;
+       }
+       .footer-links a{
+                color: #ccc;
+                text-decoration: none;
+                font-size: 14px;
+       }
+       .footer-links a:hover{
+        color: white;
+       }
+       .copyright{
+        text-align: center;
+        margin-top: 30px;
+        padding-top: 20px;
+        border-top: 1px solid rgba(255,255,255,0.1);
+        font-size: 14px;
+        color: #ccc;
+       }
+        </style>
+</head>
+<body>
+    <div class="bookmyshow">
+        <div class="book">
+            <div class="myshow">
+                <img src="img/65b6384089ec9e265952391f_bookmyshow-logo-vector-removebg-preview (1) copy 2.png" alt="logo">
+            </div>
+            
+            <div class="show">
+                <input type="text"  placeholder="enter Search for Events Play Spots ">
+            </div>
+            
+            <div class="box">
+                <ul>
+                    <li>Coimbatore</li>
+                    <button class="button"><a href="login.htm">sign in</a></button>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="run">
+            <div class="movie">
+                <ul>
+                    <li><a href="">Movies</a></li>
+                    <li><a href="">Stream</a></li>
+                     <li><a href="">Events</a></li>
+                    <li><a href="">Plays</a></li>
+                    <li><a href="">Spots</a></li>
+                </ul>
+         
+                <ul>
+                    <li><a href="">Listyourshow</a></li>
+                    <li><a href="">Coporates</a></li>
+                    <li><a href="">Offers</a></li>
+                    <li><a href="">Giftscards</a></li>
+                </ul>
+            </div>
+        
+            <div class="time">
+               <img src="img/image.png">
+            </div>
+        </div>
+            <div class="time2">
+              <h1>Recommended Movies</h1>
+            </div>
+            <div class="box1">
+               <div>
+                  <a href="movie.html"><img src="img/images.jfif"></a>
+                  <h4>🩵8.8/10 6.7k+votes</h4>
+                  <h3>Dude</h3>
+                  <h5>Love Movie</h5>
+                </div>
+                <div class="">
+                 <a href="new.html"><img src="img/f74ae9251666f8737e32e6a335ffef6d_1280x1920.webp"></a>
+                  <h4>🩵7.3/10 4.7k+votes</h4>
+                  <h3>Sith Ramam</h3>
+                  <h5>Romance Movie</h5>
+                </div>
+                <div>
+                  <a href="time.html"><img src="img/tere-ishk-mein-et00362760-1764330456.avif"></a>
+                   <h4>🩵8.8/10 6.7k+votes</h4>
+                   <h3>Tere Ishk Mein</h3> 
+                   <h5>Comedy Movie</h5>
+                </div>
+                <div>
+                  <a href="Bison.html"><img src="img/MV5BMTNmYWM3NGMtMTgwYy00ODJlLWEzMTMtMmZlNGZiZGZjOGI1XkEyXkFqcGc@._V1_.jpg"></a>
+                   <h4>🩵8.8/10 6.7k+votes</h4>
+                   <h3>Bison Kaalamaadan</h3>
+                   <h5>Action/Crime/Drama</h5 >
+                </div>
+            </div>
+            
+            <div class="box2">
+                <img src="img/stream-leadin-web-collection-202210241242.avif">
+            </div>
+       
+        
+        <div class="time3">
+            <h1>The Best of Life Events</h1>
+        </div>
+        <div class="box3">
+            <div>
+             <img src="img/comedy-shows-collection-202211140440.avif">
+            </div>
+            <div>
+             <img src="img/kids-banner-desktop-collection-202503251132.avif">
+            </div>
+            <div>
+                <img src="img/music-shows-collection-202211140440.avif">
+            </div>
+            <div>
+                <img src="img/arts-crafts-collection-202211140440.avif">
+            </div>
+            <div>
+                <img src="img/workshop-and-more-web-collection-202211140440.avif">
+            </div>
+        </div>
+        <div class="box4">
+            <div class="header">
+              <h1>Premieres</h1>
+              <h1>Brand new releases every Friday</h1>
+            </div>
+            <div class="box6">
+                <div>
+                  <img src="img/et00470423-fshthqlqmt-portrait.avif">
+                  <h4>Elevation</h4>
+                  <h4>English</h4>
+                </div>
+
+                <div>
+                   <img src="img/et00311714-evhdbbmbqb-portrait.avif">
+                   <h4>John Wick Chapter 4</h4>
+                   <h5>English</h5>
+                </div>
+
+                <div>
+                   <img src="img/et00470268-sxwfsccwwj-portrait.avif">
+                   <h4>Soul on Fire</h4>
+                   <h5>English</h5>
+                </div>
+
+                <div>
+                   <img src="img/et00470458-wbywhwjcys-portrait.avif">
+                   <h4>Eleanor the Great</h4>
+                  <h4>English</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+           <div class="footer-content">
+                <div class="footer-column">
+                   <h3>bookmyshow</h3>
+                   <ul class="footer-links">
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press</a></li>
+                   </ul>
+                </div>
+
+                <div class="footer-column">
+                      <h3>Our Policies</h3>
+                      <ul class="footer-links">
+                          <li><a href="#">Terms & Conditions</a></li>
+                          <li><a href="#">Privacy Policy</a></li>
+                          <li><a href="#">FAQ</a></li>
+                      </ul>
+                </div>
+                <div class="footer-column">
+                     <h3>Our Policies</h3>
+                     <ul class="footer-links">
+                          <li><a href="#">Movies</a></li>
+                          <li><a href="#">Events</a></li>
+                          <li><a href="#">Plays</a></li>
+                          <li><a href="#">Sports</a></li>
+                     </ul>
+                </div>
+           </div>
+           <div class="copyright">
+                    &copy;2023 bookmyshow clone.All rights reserved.
+                </div>
+    </div> 
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
